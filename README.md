@@ -1,5 +1,5 @@
 # WiFi-tools
-Some small WiFi-tools coded in Python and uses the pyshark plugin. Pyshark uses tshark from Wireshark and 
+Some small WiFi-tools coded in Python that uses the pyshark plugin. Pyshark uses tshark from Wireshark and 
 has the same sort of filters that are used in Wireshark. 
 
 That is, for this to work you need to install both tshark, that comes with Wireshark and pyshark.
@@ -11,6 +11,10 @@ For more information on Pyshark
 https://kiminewt.github.io/pyshark/
 
 To install pyshark just use pip: `pip install pyshark`
+
+My scripts don't set or change the WiFi-channel, on a MAC you can use the 'airport' cli-command or the excellent
+ and free 'Airtool' from Adrian Granados (https://www.adriangranados.com/apps/airtool), that you can find in the App Store.
+ On a Linux computer you use the `iwconfig INTERfACE channel X` cli-command, probably together with the aircrack-ng suite.
 
 
 ## number-of-retrys.py
