@@ -13,7 +13,7 @@ https://kiminewt.github.io/pyshark/
 To install pyshark just use pip: `pip install pyshark`
 
 
-##number-of-retrys.py
+## number-of-retrys.py
 Looks at a specific WiFi channel for WiFi-packets with or without the retry flag set. And shows the percentage of packets.
  Good to use to se if there is a lot of resend on the network, could be interference or that the stations don't hear
  each other.
@@ -21,13 +21,13 @@ Looks at a specific WiFi channel for WiFi-packets with or without the retry flag
 In the next version (maybe) could show a list of STA-AP that shows retrys and not a whole channel or that you can specify
   a specific BSSID or ClientMAC to listen for.
 
-##ssid-strength-meter.py
+## ssid-strength-meter.py
 Show the average signal strength for a specific BSSID. Looks att RSSI on Beacon frames. 
 You have to set the BSSID in the script. The plan is to use the cript to 
 measure wall dampening, to do a reading on each side of a wall and se the difference.
 
 
-##unique-probe-requests.py
+## unique-probe-requests.py
 This script shows uniqe probe becons from clients. A client that are not connected to a WiFi-network sends probe-becons
  with the name of SSIDs it has been connected to before. The script listens for them and saves the SSID+ClientMAC to a file
  and displays new unique SSIDs. Unfortunately most clients today do a random MAC-adress for probe-requests, that makes 
