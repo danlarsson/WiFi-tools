@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 Messure the signal strength of a specific BSSID and present the MIN, MAX and AVERAGE values.
 

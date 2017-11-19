@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 Show the number of retrys on a specific channel
 
@@ -7,8 +8,6 @@ Show % of number of retry vs packets.
 
 '''
 import pyshark
-
-BSSID = ''
 
 # Get beacon frames with correct checksum for transmitter address...
 capture_filter = 'wlan.fcs.status == 1'
@@ -47,4 +46,3 @@ for packet in capture.sniff_continuously():
     a += 1
     if a >= 10000:
         exit()
-

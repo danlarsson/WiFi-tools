@@ -10,6 +10,7 @@
 # - Just show SSID from open networks?!?
 # - Commandline code, record/show toplist, choose filename / just list, no record?
 #
+# cat probe_ssid_unique.txt | rev | cut -c 18- | rev | sort | uniq -c | sort
 ###
 import pyshark
 
